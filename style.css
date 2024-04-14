@@ -1,0 +1,106 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(
+        45deg,
+        #0d0526 0%,
+        #2989d8 50%,
+        #207cca 51%,
+        #301f7f 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    z-index: 1;
+    margin: auto 0;
+}
+.clock-text {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1;
+}
+.square {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #368ef0;
+    border-radius: 4px;
+    top: 210px;
+    right: -35px;
+    left: auto;
+    filter: blur(15px);
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #368ef0;
+    border-radius: 50%;
+    top: 80px;
+    left: -20px;
+    filter: blur(15px);
+}
+
+@media only screen and (max-width: 600px) {
+    .clock-text {
+        font-size: 70px;
+    }
+    .square {
+        width: 60px;
+        height: 60px;
+
+        top: 150px;
+        right: -35px;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top: 50px;
+        left: -20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .clock-text {
+        font-size: 60px;
+    }
+    .square {
+        width: 50px;
+        height: 50px;
+
+        top: 140px;
+        right: -25px;
+    }
+
+    .circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        top: 30px;
+        left: -30px;
+    }
+}
