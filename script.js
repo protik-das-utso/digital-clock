@@ -38,7 +38,7 @@ function updateTime() {
 
     week_day_out.textContent = weekday[week_day];
     month_out.textContent = month_name[month];
-    date_out.textContent = date + " ,";
+    date_out.textContent = date;
     year_out.textContent = year;
 
 }
