@@ -6,13 +6,11 @@ html {
 }
 
 body {
-    background: linear-gradient(
-        45deg,
-        #0d0526 0%,
-        #2989d8 50%,
-        #207cca 51%,
-        #301f7f 100%
-    );
+    background: linear-gradient(45deg,
+            #0d0526 0%,
+            #2989d8 50%,
+            #207cca 51%,
+            #301f7f 100%);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -24,14 +22,14 @@ body {
 .box {
     position: relative;
     z-index: 1;
-    margin: auto 0;
 }
+
 .clock-text {
     position: relative;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.1);
     color: white;
-
+    margin-top: 0;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -39,7 +37,27 @@ body {
     padding: 15px;
     border-radius: 10px;
     z-index: 1;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
+
+.top-text {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: rgba(34, 50, 50, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    width: 550px;
+}
+
+.top-text .date-row {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
 .square {
     position: absolute;
     width: 80px;
@@ -63,10 +81,22 @@ body {
     filter: blur(15px);
 }
 
-@media only screen and (max-width: 600px) {
+
+.am-pm {
+    font-size: 25px;
+
+}
+
+@media only screen and (max-width: 620px) {
     .clock-text {
-        font-size: 70px;
+        font-size: 60px;
+        width: 350px;
     }
+
+    .top-text {
+        width: 350px;
+    }
+
     .square {
         width: 60px;
         height: 60px;
@@ -84,10 +114,15 @@ body {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 460px) {
     .clock-text {
-        font-size: 60px;
+        font-size: 30px;
+        width: 250px;
     }
+        .top-text {
+        font-size: 10px;
+            width: 270px;
+        }
     .square {
         width: 50px;
         height: 50px;
