@@ -5,7 +5,7 @@ let date_out = document.querySelector(".date");
 let year_out = document.querySelector(".year");
 
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const month_name = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const month_name = ["January", "Februray", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 function updateTime() {
     const d = new Date();
@@ -16,6 +16,7 @@ function updateTime() {
     let month = d.getMonth();
     let date = d.getDate();
     let year = d.getFullYear();
+
     let am = hour < 12 ? "AM" : "PM";
     hour = hour = hour < 10 ? "0" + hour : hour;
     hour = hour > 12 ? hour - 12 : hour;
