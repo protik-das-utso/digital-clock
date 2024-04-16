@@ -16,14 +16,13 @@ function updateTime() {
     let month = d.getMonth();
     let date = d.getDate();
     let year = d.getFullYear();
-
+    let am = hour < 12 ? "AM" : "PM";
     hour = hour = hour < 10 ? "0" + hour : hour;
     hour = hour > 12 ? hour - 12 : hour;
 
     minute = minute < 10 ? "0" + minute : minute;
     second = second < 10 ? "0" + second : second;
 
-    let am = hour < 12 ? "AM" : "PM";
 
     hour_set = document.querySelector(".hour");
     min_set = document.querySelector(".minute");
