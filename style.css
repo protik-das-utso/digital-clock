@@ -55,7 +55,7 @@ body {
 .top-text .date-row {
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 30%;
 }
 
 .square {
@@ -64,7 +64,7 @@ body {
     height: 80px;
     background-color: #368ef0;
     border-radius: 4px;
-    top: 210px;
+    top: 130px;
     right: -35px;
     left: auto;
     filter: blur(15px);
@@ -76,7 +76,7 @@ body {
     height: 100px;
     background-color: #368ef0;
     border-radius: 50%;
-    top: 80px;
+    top: 10px;
     left: -20px;
     filter: blur(15px);
 }
@@ -102,11 +102,15 @@ body {
 
     }
 
+    .top-text .date-row {
+        width: 40%;
+    }
+
     .square {
         width: 60px;
         height: 60px;
 
-        top: 150px;
+        top: 110px;
         right: -35px;
     }
 
@@ -114,7 +118,7 @@ body {
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        top: 50px;
+        top: -10px;
         left: -20px;
     }
 }
