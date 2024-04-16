@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Orbitron:wght@400..900&display=swap');
+
 body,
 html {
     margin: 0;
@@ -22,6 +24,42 @@ body {
 .box {
     position: relative;
     z-index: 1;
+}
+
+.year-sec {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Orbitron";
+    margin-bottom: 5px;
+    color: chocolate;
+    display: flex;
+background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.date-month {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.year{
+    
+    align-items: center;
+    display: flex;
+}
+.week-day {
+    font-size: 30px;
+    font-family: "Jersey 20";
+    color:darkseagreen;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
 }
 
 .clock-text {
@@ -55,32 +93,8 @@ body {
 .top-text .date-row {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    text-align: center;
 }
-
-.square {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-color: #368ef0;
-    border-radius: 4px;
-    top: 130px;
-    right: -35px;
-    left: auto;
-    filter: blur(15px);
-}
-
-.circle {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #368ef0;
-    border-radius: 50%;
-    top: 10px;
-    left: -20px;
-    filter: blur(15px);
-}
-
 
 .am-pm {
     font-size: 25px;
@@ -106,21 +120,7 @@ body {
         width: 40%;
     }
 
-    .square {
-        width: 60px;
-        height: 60px;
 
-        top: 110px;
-        right: -35px;
-    }
-
-    .circle {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        top: -10px;
-        left: -20px;
-    }
 }
 
 @media only screen and (max-width: 460px) {
@@ -134,19 +134,4 @@ body {
         width: 270px;
     }
 
-    .square {
-        width: 50px;
-        height: 50px;
-
-        top: 140px;
-        right: -25px;
-    }
-
-    .circle {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        top: 30px;
-        left: -30px;
-    }
 }
